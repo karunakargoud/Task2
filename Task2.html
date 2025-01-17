@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fn(){
+            var input=document.querySelector("input");
+            var textBoxData=input.value;
+            var li=document.createElement("li");
+            var list=document.getElementById("username");
+            li.innerText=textBoxData;
+            list.append(li);
+            
+        }
+    </script>
+</head>
+<body>
+    <h2>Task</h2>
+    <input type="text" placeholder="username"/>
+    <button onclick="fn()">submit</button>
+    <p id="username"></p>
+     <!-- <ol id="ol"></ol> -->
+</body>
+</html>
